@@ -11,7 +11,7 @@
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
   
   /* Change the color of links on hover */
@@ -51,3 +51,24 @@
     }
 }
 
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+}
+
+.navbar a {
+  color:black;
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0px auto;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
