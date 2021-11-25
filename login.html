@@ -1,42 +1,87 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Popup Login Form Design | CodingNepal</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <div class="center">
-         <input type="checkbox" id="show">
-         <label for="show" class="show-btn">View Form</label>
-         <div class="container">
-            <label for="show" class="close-btn fas fa-times" title="close"></label>
-            <div class="text">
-               Login Form
-            </div>
-            <form action="#">
-               <div class="data">
-                  <label>Email or Phone</label>
-                  <input type="text" required>
-               </div>
-               <div class="data">
-                  <label>Password</label>
-                  <input type="password" required>
-               </div>
-               <div class="forgot-pass">
-                  <a href="#">Forgot Password?</a>
-               </div>
-               <div class="btn">
-                  <div class="inner"></div>
-                  <button type="submit">login</button>
-               </div>
-               <div class="signup-link">
-                  Not a member? <a href="#">Signup now</a>
-               </div>
-            </form>
-         </div>
-      </div>
-   </body>
+<html lang="en">
+    <head>
+        <title>EasyCooking</title>
+        <meta charset="utf-8" />
+        <!-- Font of EasyCooking -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap'); 
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./Resources/css/cookapp.css">
+        <link rel="stylesheet" type="text/css" href=".Resources/css/contact_style.css">
+        <link rel="stylesheet" type="text/css" href=".Resources/css/login.css">
+    </head>
+
+    <div class="topnav">
+
+        <!--- Left-aligned links (default) -->
+        <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
+
+        <!--- Centered link -->
+        <div class="topnav-centered">
+            <a href="index.html" class="active">EasyCooking</a>
+        </div>
+        
+        <div class="topnav-right">
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="profile.html"><i class="fa fa-fw fa-user"></i></a>
+        </div>
+    </div>
+    
+    <hr class="hr1">
+    <center>
+      <form method="post" action="login.php">
+      <table>
+      <tr><td colspan="2" style="text-align: center;background-color:#353A46;color:white; padding-bottom:10px; padding-top:10px;">
+      <label>Login</label></td>
+      </tr>
+      <tr>
+      <td><label>Usuario</label></td>
+      </tr>
+      <tr><td><input type="text" name="txtusuario"/></td></tr>
+      <tr><td><label>Password</label></td></tr>
+      <tr><td><input type="password" name="txtpassword" /> </td></tr>
+      <tr><td><input type="submit" value="Ingresar" /> </td></tr>
+      </table>
+      </form>
+      </center>
+    <div class="navbar">
+        <a href="about-us.html">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <script type="text/javascript" src="cookapp.js"></script>
+    <style>
+       table {
+      border: 2px solid #353A46;
+      background-color: #ffffff;
+}
+      
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 8px 20px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+    
+label{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+}
+      
+input[type=submit]{
+    background-color: #353A46;
+    color:white;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    border: solid;
+    cursor: pointer;
+    width: 40%;
+}
+    </style>
+    
 </html>
