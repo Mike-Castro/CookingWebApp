@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["txtusuario"])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
