@@ -17,5 +17,5 @@ $name = $_POST["txtname"];
  
     mysqli_query($conn,"INSERT INTO register(username,email,password,displayname) VALUES ('$nombre','$email','$pass','$name')");
     //echo "User Registered";
-    echo "<script> alert('User Registered! Welcome: ".$name." ');window.location= 'index.html' </script>";
+    echo "<script> alert('User Registered! Welcome: ".$name." ');window.location= 'index.php' </script>";
 ?>
