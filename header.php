@@ -1,5 +1,4 @@
 <?php
-require_once('environment.php');
 session_start();
 $r = session_id();
 ?>
@@ -26,11 +25,7 @@ $r = session_id();
             <form action="search.php">
                 <div class="searchInputContainer">
                     <i class="fa fa-fw fa-search"></i>
-                    <?php if (isset($_GET["search"])) { ?>
-                        <input class="searchInput" type="text" name="search" id="" placeholder="Search" value="<?php echo htmlspecialchars($_GET["search"]); ?>">
-                    <?php } else { ?>
-                        <input class="searchInput" type="text" name="search" id="" placeholder="Search">
-                    <?php } ?>
+                    <input class="searchInput" type="text" name="search" id="" placeholder="Search">
                 </div>
             </form>
         </div>
@@ -51,7 +46,7 @@ $r = session_id();
         .searchInputContainer {
             display: flex;
             background-color: #f2f2f2;
-            width: 12rem;
+            width: 10rem;
             align-content: center;
             align-items: center;
             padding: 0.5rem 0.8rem;
@@ -66,7 +61,7 @@ $r = session_id();
             border: 0;
             background-color: #f2f2f200;
             border-radius: 1rem;
-            width: 10rem;
+            width: 8rem;
         }
 
         .searchInput:focus {

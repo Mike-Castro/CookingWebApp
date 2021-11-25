@@ -1,59 +1,31 @@
-<?php
-require_once('api/objects/recipies_api.php');
-include 'header.php';
-?>
+<?php include 'header.php'; ?>
+
+<hr class="hr1">
 
 <!--- ---------Testing Sessions----------- -->
 <style>
-    .recipiesContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        margin-top: 2rem;
-        padding: 1rem;
+    .mycss {
+        font-family: 'Zeyada', cursive;
+        color: red;
+        text-align: center;
+        font-size: 35px;
+
     }
 
-    .recipiesContainer a {
-        position: relative;
-        text-decoration: none;
-    }
+    .mycss2 {
+        font-family: 'Zeyada', cursive;
 
-    .individualRecipie {
-        color: black;
-    }
+        text-align: center;
+        font-size: 35px;
 
-    .individualRecipie p {
-        text-decoration: none;
-        margin-top: 0.5rem;
-    }
-
-    .individualRecipie img {
-        width: 100%;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .recipiesContainer {
-            grid-template-columns: repeat(1, 1fr);
-        }
     }
 </style>
-<div class="recipiesContainer">
+<?php
+if (isset($_SESSION['username']))
+    echo "<p class='mycss2'>{$_SESSION['username']}</p>";
+//echo "<p class='mycss'>Welcome</p>;<p class='mycss'>Welcome {$_SESSION['username']}</p>";
+else
+    echo "<p class='mycss'> Not logged in!...</p>";
 
-    <?php
-    $recipies = getIndexResults(true);
-    foreach ($recipies as $recipie) {
-    ?>
-        <a href="recipie.php?id=<?php echo $recipie->id ?>">
-            <div class="individualRecipie">
-                <img src="<?php echo $recipie->image ?>" alt="">
-                <p><?php echo $recipie->title ?></p>
-            </div>
-        </a>
-    <?php
-    }
-
-    ?>
-</div>
+?>
 <?php include 'footer.php'; ?>
