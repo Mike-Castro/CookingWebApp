@@ -30,7 +30,8 @@ else
 
 <div class="container">
     <button class="button button1">My Info</button>
-    <button class="button button2">Change Password</button>
+    <a class="button button2" href="reset.php">Change Password</a>
 </div>
+
 
 <?php include 'footer.php'; ?>
