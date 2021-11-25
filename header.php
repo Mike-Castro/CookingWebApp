@@ -32,7 +32,7 @@ $r = session_id();
         <div class="topnav-right">
             <?php if (!isset($_SESSION['username'])) : ?>
                 <a href="login.php">Log in</a>
-                <a href="signup.html">Sign Up</a>
+                <a href="register.php">Sign Up</a>
             <?php else : ?>
                 <a href="profile.php"><i class="fa fa-fw fa-user"></i></a>
                 <a href='?exit=true'><i class="fa fa-sign-out" aria-hidden="true"></i>Sign-Out</a>
