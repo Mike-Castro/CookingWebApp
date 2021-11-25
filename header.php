@@ -1,4 +1,5 @@
 <?php
+require_once('environment.php');
 session_start();
 $r = session_id();
 ?>
@@ -46,7 +47,7 @@ $r = session_id();
         .searchInputContainer {
             display: flex;
             background-color: #f2f2f2;
-            width: 10rem;
+            width: 12rem;
             align-content: center;
             align-items: center;
             padding: 0.5rem 0.8rem;
@@ -61,7 +62,7 @@ $r = session_id();
             border: 0;
             background-color: #f2f2f200;
             border-radius: 1rem;
-            width: 8rem;
+            width: 10rem;
         }
 
         .searchInput:focus {
