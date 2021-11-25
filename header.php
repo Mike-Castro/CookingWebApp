@@ -26,7 +26,11 @@ $r = session_id();
             <form action="search.php">
                 <div class="searchInputContainer">
                     <i class="fa fa-fw fa-search"></i>
-                    <input class="searchInput" type="text" name="search" id="" placeholder="Search">
+                    <?php if (isset($_GET["search"])) { ?>
+                        <input class="searchInput" type="text" name="search" id="" placeholder="Search" value="<?php echo htmlspecialchars($_GET["search"]); ?>">
+                    <?php } else { ?>
+                        <input class="searchInput" type="text" name="search" id="" placeholder="Search">
+                    <?php } ?>
                 </div>
             </form>
         </div>
