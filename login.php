@@ -30,7 +30,7 @@ if (isset($_POST["txtusuario"])) {
 		//echo "<script> alert('Login Credentials Invalid! Create an account');window.location= 'signup.html' </script>";
 		echo ("<script>if(confirm('Login Credentials Invalid! Do you want to create an account?')){
 		// Use AJAX here to send Query to a PHP file
-		window.location= 'signup.html'
+		window.location= 'register.html'
 	 } else {
 		window.location= 'login.php'
 	 };</script>");

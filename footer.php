@@ -2,7 +2,7 @@
 ?>
 <!--- ------------------------------------- -->
 <div class="navbar">
-    <a href="about-us.html">About us</a>
+    <a href="about-us.php">About us</a>
     <a href="contact.php">Contact us</a>
     <a href="faq.html">FAQ</a>
 </div>
