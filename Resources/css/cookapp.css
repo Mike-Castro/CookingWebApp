@@ -1,72 +1,94 @@
+body {
+  margin: 0;
+}
+
 .topnav {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 20px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
 }
-  
-  /* Style the links inside the navigation bar */
+
+/* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 20px;
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
-  
-  /* Change the color of links on hover */
+
+/* Change the color of links on hover */
 .topnav a:hover {
-    color: #ff0000;
+  color: #ff0000;
 }
 
-  /* Centered section inside the top navigation */
-.topnav-centered a{
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Zeyada', cursive;
-    font-size: 48px;
+/* Centered section inside the top navigation */
+.topnav-centered {
+  display: flex;
 }
-  
-  /* Right-aligned section inside the top navigation */
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  font-family: "Zeyada", cursive;
+  font-size: 28px;
+  line-height: 21px;
+}
+
+/* Right-aligned section inside the top navigation */
 .topnav-right {
-    float: right;
-}
-  
-  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-    .topnav a, .topnav-right {
-        float: none;
-        display: block;
-}
-  
-    .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
+  float: right;
 }
 
-hr { 
-  background-color: rgb(0, 0, 0); 
-  height: 1px; border: 0; 
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+hr {
+  background-color: rgb(0, 0, 0);
+  height: 1px;
+  border: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Place the navbar at the bottom of the page, and make it stick */
-.navbar{
+.navbar {
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 .navbar a {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   display: inline-block;
   padding: 14px 16px;
   text-decoration: none;

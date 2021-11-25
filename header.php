@@ -11,6 +11,7 @@ $r = session_id();
     <!-- Font of EasyCooking -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./Resources/css/cookapp.css">
@@ -18,17 +19,18 @@ $r = session_id();
 </head>
 
 <body>
-
     <div class="topnav">
-
-        <!--- Left-aligned links (default) -->
-        <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
-
-        <!--- Centered link -->
         <div class="topnav-centered">
             <a href="index.php" class="active">EasyCooking</a>
+            <form action="search.php">
+                <div class="searchInputContainer">
+                    <i class="fa fa-fw fa-search"></i>
+                    <input class="searchInput" type="text" name="search" id="" placeholder="Search">
+                </div>
+            </form>
         </div>
-
+        <!--- Left-aligned links (default) -->
+        <!--- Centered link -->
         <div class="topnav-right">
             <?php if (!isset($_SESSION['username'])) : ?>
                 <a href="login.php">Log in</a>
@@ -40,7 +42,33 @@ $r = session_id();
             <!--- <a href="./Resources/config/exitsession.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign-Out</a>-->
         </div>
     </div>
+    <style>
+        .searchInputContainer {
+            display: flex;
+            background-color: #f2f2f2;
+            width: 10rem;
+            align-content: center;
+            align-items: center;
+            padding: 0.5rem 0.8rem;
+            border-radius: 1rem;
+        }
 
+        .searchInputContainer i {
+            margin-right: 0.6rem;
+        }
+
+        .searchInput {
+            border: 0;
+            background-color: #f2f2f200;
+            border-radius: 1rem;
+            width: 8rem;
+        }
+
+        .searchInput:focus {
+            border: 0;
+            outline: 0;
+        }
+    </style>
     <?php
     function signout() {
         session_unset();
