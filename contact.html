@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EasyCooking</title>
+        <meta charset="utf-8" />
+        <!-- Font of EasyCooking -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap'); 
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./Resources/css/cookapp.css">
+    </head>
+    
+    <div class="topnav">
+
+        <!--- Left-aligned links (default) -->
+        <a href="search.html"><i class="fa fa-fw fa-search"></i>Search</a>
+
+        <!--- Centered link -->
+        <div class="topnav-centered">
+            <a href="index.html" class="active">EasyCooking</a>
+        </div>
+
+        <div class="topnav-right">
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="profile.html"><i class="fa fa-fw fa-user"></i></a>
+        </div>
+    </div>
+
+    <hr class="hr1">
+
+    <body>
+    <link rel="stylesheet" href="./Resources/css/contact_style.css">
+
+    <div class="fcf-body">
+
+        <div id="fcf-form">
+        <h3 style="text-align: center;" class="fcf-h3">Contact us</h3>
+    
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="sendMail.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            </div>
+    
+        </form>
+        </div>
+    
+    </div>
+
+    <div class="navbar">
+        <a href="about-us.html">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    </body>
+</html>
