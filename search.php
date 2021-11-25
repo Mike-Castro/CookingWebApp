@@ -7,7 +7,7 @@ include 'header.php';
 <style>
     .recipiesContainer {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
@@ -42,7 +42,8 @@ include 'header.php';
 <div class="recipiesContainer">
 
     <?php
-    $recipies = getIndexResults(true);
+    $search_param = htmlspecialchars($_GET["search"]);
+    $recipies = getSearchResults($search_param, true);
     foreach ($recipies as $recipie) {
     ?>
         <a href="recipie.php?id=<?php echo $recipie->id ?>">
