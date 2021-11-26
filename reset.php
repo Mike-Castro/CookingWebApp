@@ -54,6 +54,7 @@
     .resetContainer {
         background-color: #f9f9f9;
         height: 100vh;
+        overflow: auto;
     }
 
     .resetContainer .resetFormContainer {
