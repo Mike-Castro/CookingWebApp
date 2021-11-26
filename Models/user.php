@@ -44,8 +44,7 @@ class User {
 
         // query to insert record
         $query = "INSERT INTO " . $this->table_name . " (username, email, password, displayname)
-                  VALUES ('" . $this->username . "', '" . $this->email . "', '" . $this->password . "', " . $this->displayname . ")";
-
+                  VALUES ('" . $this->username . "', '" . $this->email . "', '" . $this->password . "', '" . $this->displayname . "')";
         // execute query
         if ($this->conn->query($query)) {
             $last_id = $this->conn->insert_id;
@@ -233,6 +232,19 @@ class User {
      */
     public function setEmail($email) {
         $this->email = $email;
+    }
+    /**
+     * @return mixed
+     */
+    public function getPassword() {
+        return $this->password;
+    }
+
+    /**
+     * @param mixed $invitecode
+     */
+    public function setPassword($password) {
+        $this->password = $password;
     }
 
     public function toArray() {
