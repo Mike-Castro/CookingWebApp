@@ -1,18 +1,12 @@
 <?php include 'header.php'; ?>
 <link rel="stylesheet" type="text/css" href="./Resources/css/profile.css">
-<hr class="hr1">
 <style>
     .mycss {
-        font-family: 'Permanent Marker', cursive;
-
         text-align: center;
         font-size: 20px;
-
     }
 
     .mycss2 {
-        font-family: 'Permanent Marker', cursive;
-
         text-align: center;
         font-size: 30px;
 
