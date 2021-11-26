@@ -7,8 +7,12 @@ $r = session_id();
 <html lang="en">
 
 <head>
-    <title>EasyCooking</title>
+    <title key="title">EasyCooking</title>
+    <meta name="description" content="EasyCcooking is a website where you can lookup ingredients to find recipies and save them." />
     <meta charset="utf-8" />
+    <meta property="og:locale" content="en_US" />
+    <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <!-- Font of EasyCooking -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
@@ -43,7 +47,7 @@ $r = session_id();
                 <a href="register.php">Sign Up</a>
             <?php else : ?>
                 <a href="profile.php"><i class="fa fa-fw fa-user"></i></a>
-                <a href='?exit=true'><i class="fa fa-sign-out" aria-hidden="true"></i>Sign-Out</a>
+                <a href='?exit=true'><i class="fa fa-sign-out" aria-hidden="true"></i></a>
             <?php endif; ?>
             <!--- <a href="./Resources/config/exitsession.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign-Out</a>-->
         </div>
@@ -73,6 +77,21 @@ $r = session_id();
         .searchInput:focus {
             border: 0;
             outline: 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .topnav-centered {
+                flex-flow: column;
+                align-items: flex-start;
+            }
+
+            .topnav a,
+            .topnav-right {
+                display: flex;
+                flex-flow: column;
+                align-items: end;
+            }
+
         }
     </style>
     <?php

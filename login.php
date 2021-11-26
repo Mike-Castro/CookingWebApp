@@ -7,36 +7,14 @@
 </div>
 <div class="loginContainer">
 	<center>
-		<form method="post" id="loginForm">
-			<table>
-				<tr>
-					<td colspan="2" style="
-              text-align: center;
-              background-color: #353a46;
-              color: white;
-              padding-bottom: 10px;
-              padding-top: 10px;
-			  ">
-						<label>Login</label>
-					</td>
-				</tr>
-				<tr>
-					<td><label>Usuario</label></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="txtusuario" required /></td>
-				</tr>
-				<tr>
-					<td><label>Password</label></td>
-				</tr>
-				<tr>
-					<td><input type="password" name="txtpassword" required /></td>
-				</tr>
-				<tr>
-					<td><input type="submit" value="Ingresar" /></td>
-				</tr>
-			</table>
-		</form>
+		<div class="loginFormContainer">
+			<form method="post" id="loginForm">
+				<h3>Login</h3>
+				<input type="text" name="txtusuario" required placeholder="usuario" /></td>
+				<input type="password" name="txtpassword" required placeholder="password" />
+				<input type="submit" value="Ingresar" />
+			</form>
+		</div>
 	</center>
 </div>
 <script type="text/javascript">
@@ -71,20 +49,33 @@
 </script>
 <style>
 	.loginContainer {
-		margin-top: 2rem;
+		background-color: #f9f9f9;
+		height: 100vh;
 	}
 
-	.loginContainer table {
-		border: 2px solid #353a46;
-		background-color: #ffffff;
+	.loginContainer .loginFormContainer {
+		width: 30rem;
+		margin-top: 5rem;
 	}
 
 	.loginContainer input[type="text"],
 	.loginContainer input[type="password"] {
 		width: 100%;
 		padding: 8px 20px;
-		border: 2px solid #ccc;
 		box-sizing: border-box;
+		background-color: transparent;
+		margin-bottom: 1rem;
+		border: 0;
+		border-bottom-color: currentcolor;
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		border-bottom: 1px solid gray;
+		filter: none;
+	}
+
+	.loginContainer input[type="text"]:autofill,
+	.loginContainer input[type="password"]:autofill {
+		background-color: transparent;
 	}
 
 	.loginContainer label {
@@ -101,6 +92,15 @@
 		border: solid;
 		cursor: pointer;
 		width: 40%;
+	}
+
+	.loginFormContainer {
+		background-color: #ffffff;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		-webkit-box-shadow: 2px 2px 12px -4px rgba(166, 166, 166, 1);
+		-moz-box-shadow: 2px 2px 12px -4px rgba(166, 166, 166, 1);
+		box-shadow: 2px 2px 12px -4px rgba(166, 166, 166, 1);
 	}
 
 	.hide {
@@ -129,6 +129,12 @@
 		text-align: center;
 		font-weight: bold;
 		color: white;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.loginContainer .loginFormContainer {
+			width: 100%;
+		}
 	}
 </style>
 <?php include 'footer.php'; ?>
