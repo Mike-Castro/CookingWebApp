@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 <hr class="hr1">
-<h1>About Us</h1>
-<p>We are students from Instituto Tecnológico y de Estudios Superiores de Monterrey, this is a project for our web
+<h1 style="text-align: center">About Us</h1>
+<p style="text-align: center">We are students from Instituto Tecnológico y de Estudios Superiores de Monterrey, this is a project for our web
   applications development class, in which we apply every subject we learned.</p>
 </div>
 

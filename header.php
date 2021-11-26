@@ -22,7 +22,7 @@ $r = session_id();
 <body>
     <div class="topnav">
         <div class="topnav-centered">
-            <a href="index.php" class="active">EasyCooking</a>
+            <a href="index.php">EasyCooking</a>
             <form action="search.php">
                 <div class="searchInputContainer">
                     <i class="fa fa-fw fa-search"></i>
