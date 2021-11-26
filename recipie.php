@@ -8,6 +8,7 @@ include 'header.php';
     .individualRecipie {
         padding: 2rem;
         display: flex;
+        align-items: flex-start;
     }
 
     .info {
@@ -15,7 +16,12 @@ include 'header.php';
     }
 
     .poster {
+        border-radius: 0.6rem;
         width: 30rem;
+    }
+
+    .title {
+        font-size: 20px;
     }
 </style>
 <div class="recipiesContainer">
@@ -27,7 +33,17 @@ include 'header.php';
     <div class="individualRecipie">
         <img class="poster" src="<?php echo $recipie->image ?>" alt="">
         <div class="info">
-            <h1><?php echo $recipie->title ?></h1>
+            <h1 class="title"><?php echo $recipie->title ?></h1>
+            <div class="ingredientsContainer">
+                <h3>Ingredients:</h3>
+                <?php
+                $extendedIngredients = $recipie->extendedIngredients;
+                foreach ($extendedIngredients as $ingredient) {  ?>
+                    <ul>
+                        <li><?php echo $ingredient->originalName ?></li>
+                    </ul>
+                <?php } ?>
+            </div>
         </div>
     </div>
     <?php

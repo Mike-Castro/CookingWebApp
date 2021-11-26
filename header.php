@@ -13,6 +13,10 @@ $r = session_id();
     <meta property="og:locale" content="en_US" />
     <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Resources/favicon-16x16.png">
+    <link rel="manifest" href="Resources/site.webmanifest">
     <!-- Font of EasyCooking -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
