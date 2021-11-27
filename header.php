@@ -50,6 +50,7 @@ $r = session_id();
                 <a href="login.php">Log in</a>
                 <a href="register.php">Sign Up</a>
             <?php else : ?>
+                <a href="favorites.php"><i class="fa fa-heart"></i></a>
                 <a href="profile.php"><i class="fa fa-fw fa-user"></i></a>
                 <a href='?exit=true'><i class="fa fa-sign-out" aria-hidden="true"></i></a>
             <?php endif; ?>
