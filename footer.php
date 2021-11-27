@@ -7,7 +7,7 @@
     <a href="faq.php">FAQ</a>
 </div>
 
-<script type="text/javascript" src="cookapp.js"></script>
+<script type="text/javascript" src="Resources/js/cookapp.js"></script>
 </body>
 
 </html>

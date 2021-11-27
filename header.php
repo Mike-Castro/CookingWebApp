@@ -23,8 +23,8 @@ $r = session_id();
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./Resources/css/cookapp.css">
-    <link rel="stylesheet" type="text/css" href=".Resources/css/contact_style.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/cookapp.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/contact_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -36,9 +36,9 @@ $r = session_id();
                 <div class="searchInputContainer">
                     <i class="fa fa-fw fa-search"></i>
                     <?php if (isset($_GET["search"])) { ?>
-                        <input class="searchInput" type="text" name="search" id="" placeholder="Search" value="<?php echo htmlspecialchars($_GET["search"]); ?>">
+                        <input class="searchInput" type="text" name="search" id="" placeholder="Search Ingredients" value="<?php echo htmlspecialchars($_GET["search"]); ?>">
                     <?php } else { ?>
-                        <input class="searchInput" type="text" name="search" id="" placeholder="Search">
+                        <input class="searchInput" type="text" name="search" id="" placeholder="Search Ingredients">
                     <?php } ?>
                 </div>
             </form>
