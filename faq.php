@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-<hr class="hr1">
 <div style="text-align:center;">
     <h1>FAQ'S</h1>
     <button class="accordion">Can you post guest recipes?</button>
@@ -18,7 +17,7 @@
 
     <button class="accordion">Can I substitute an ingredient from a recipe?</button>
     <div class="panel">
-        <p>We don't recommend it since all the recipes are delicious with the marked ingredients, 
+        <p>We don't recommend it since all the recipes are delicious with the marked ingredients,
             but if you think it will work, do it!</p>
     </div>
     <script type="text/javascript" src="./Resources/js/cookapp.js"></script>

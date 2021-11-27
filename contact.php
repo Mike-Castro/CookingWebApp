@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 <link rel="stylesheet" href="./Resources/css/contact_style.css">
-<hr class="hr1">
 
 
 <div class="fcf-body">
