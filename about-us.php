@@ -8,7 +8,6 @@
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="/w3images/team1.jpg" alt="Mike" style="width:100%">
       <div class="container">
         <h2>Miguel Castro</h2>
         <p class="title">Software Engineer</p>
@@ -19,7 +18,6 @@
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team2.jpg" alt="Adrian" style="width:100%">
       <div class="container">
         <h2>Adrian Gonzalez</h2>
         <p class="title">Software Engineer</p>
@@ -30,7 +28,6 @@
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team3.jpg" alt="Isaac" style="width:100%">
       <div class="container">
         <h2>Isaac Jordan</h2>
         <p class="title">Software Engineer</p>

@@ -62,6 +62,20 @@ if (isset($_SESSION['username'])) {
     #favoriteBtn:hover {
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
     }
+
+    @media only screen and (max-width: 600px) {
+        .individualRecipie {
+            flex-flow: column;
+        }
+
+        .poster {
+            width: 100%;
+        }
+
+        .info {
+            margin-left: 0;
+        }
+    }
 </style>
 <div class="recipiesContainer">
 
