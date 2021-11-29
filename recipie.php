@@ -67,7 +67,7 @@ if (isset($_SESSION['username'])) {
 
     <?php
     $id = htmlspecialchars($_GET["id"]);
-    $recipie = getRecipie($id, true);
+    $recipie = getRecipie($id, false);
     ?>
     <div class="individualRecipie">
         <div>

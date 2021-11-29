@@ -43,7 +43,7 @@ include 'header.php';
 
     <?php
     $search_param = htmlspecialchars($_GET["search"]);
-    $recipies = getSearchResults($search_param, true);
+    $recipies = getSearchResults($search_param, false);
     foreach ($recipies as $recipie) {
     ?>
         <a href="recipie.php?id=<?php echo $recipie->id ?>">

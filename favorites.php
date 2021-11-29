@@ -28,7 +28,7 @@ if (!isset($_SESSION['username'])) {
     ?>
             <div class="recipiesContainer">
                 <?php
-                $recipies = getSearchResultsQuery($query, true);
+                $recipies = getSearchResultsQuery($query, false);
                 foreach ($recipies as $recipie) {
                 ?>
                     <a href="recipie.php?id=<?php echo $recipie->id ?>">

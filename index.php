@@ -42,7 +42,7 @@ include 'header.php';
 <div class="recipiesContainer">
 
     <?php
-    $recipies = getIndexResults(true);
+    $recipies = getIndexResults(false);
     foreach ($recipies as $recipie) {
     ?>
         <a href="recipie.php?id=<?php echo $recipie->id ?>">
