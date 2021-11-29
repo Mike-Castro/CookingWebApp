@@ -1,30 +1,32 @@
 <?php
-include("user.php");
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "LAB06";
+function getUser() {
+    include("user.php");
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "test";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-if ($_GET["id"]) {
-
-    $user = new User($conn);
-    $user->setId($_GET["id"]);
-
-    $was_read = $user->readOne();
-
-    if ($was_read) {
-        echo json_encode($user->toArray());
-    } else {
-        echo "Error while reading user";
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-} else {
-    echo "Parameters are missing";
+
+    if (isset($_SESSION['username'])) {
+
+        $user = new User($conn);
+        $user->setId($_SESSION['username']);
+
+        $was_read = $user->readOne();
+
+        if ($was_read) {
+            return $user->toArray();
+        } else {
+            return array('success' => 0);
+        }
+    } else {
+        return array('success' => 0);
+    }
 }

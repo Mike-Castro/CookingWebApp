@@ -57,14 +57,13 @@ class User {
 
     // used when reading one result
     function readOne() {
-
         // query to read single record
         $query = "SELECT
                     q.username, q.email, q.displayname
                 FROM
                     " . $this->table_name . " q
                 WHERE
-                    q.username = " . $this->username . "
+                    q.username = '" . $this->username . "'
                 LIMIT
                     0,1";
 
@@ -73,8 +72,8 @@ class User {
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            $this->username = $row['id_user'];
-            $this->email = $row['name'];
+            $this->username = $row['username'];
+            $this->email = $row['email'];
             $this->displayname = $row['displayname'];
             return true;
         } else {
@@ -249,6 +248,7 @@ class User {
 
     public function toArray() {
         return [
+            'success' => 1,
             "username" => $this->getId(),
             "email" => $this->getEmail(),
             "displayname" => $this->getName()

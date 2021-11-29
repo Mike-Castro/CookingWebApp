@@ -23,8 +23,8 @@ else
 ?>
 
 <div class="container">
-    <button class="button button1">My Info</button>
-    <a class="button button2" href="reset.php">Change Password</a>
+    <a class="button button1" href="info.php">My Info</button>
+        <a class="button button2" href="reset.php">Change Password</a>
 </div>
 
 
